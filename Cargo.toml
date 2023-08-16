@@ -30,3 +30,16 @@ tokio = ["dep:tokio"]
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
+
+[[example]]
+name = "async_read"
+required-features = ["tokio"]
+[[example]]
+name = "async_write"
+required-features = ["tokio"]
+[[example]]
+name = "async_send"
+required-features = ["tokio"]
+[[example]]
+name = "async_recv"
+required-features = ["tokio"]
