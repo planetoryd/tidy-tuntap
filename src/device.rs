@@ -21,7 +21,7 @@ pub struct Device {
 }
 
 impl Device {
-    fn new(name: impl AsRef<str>, mode: Mode, packet_info: bool) -> Result<Self> {
+    pub fn new(name: impl AsRef<str>, mode: Mode, packet_info: bool) -> Result<Self> {
         let (name, mut files, inet4_socket, inet6_socket) =
             create_device(name, mode, 1, packet_info, false)?;
 

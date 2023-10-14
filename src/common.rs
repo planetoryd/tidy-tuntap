@@ -7,6 +7,7 @@ use nix::sys::socket;
 use crate::error::Result;
 use crate::{bindings, ioctl};
 
+#[derive(Serialize, Deserialize)]
 /// Represents the mode of device.
 pub enum Mode {
     Tun,
