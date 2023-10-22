@@ -3,6 +3,7 @@ use std::os::unix::prelude::*;
 use std::sync::Arc;
 
 use nix::sys::socket;
+use serde::{Deserialize, Serialize};
 
 use crate::error::Result;
 use crate::{bindings, ioctl};
